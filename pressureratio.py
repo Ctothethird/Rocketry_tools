@@ -10,7 +10,7 @@ testaircount = 0.0
 
 #functions
 def simulate(p, Fa, Na, Fv):
-    p/Na = f
+    f = p/Na
 
 while True:
     airpressureinput = input("What is the air pressure(in pascals)? ")
