@@ -5,7 +5,8 @@ airpressure = 0.0
 fueltankarea = 0.0
 nosslearea = 0.0
 fueltankvolume = 0.0
-
+testwatercount = 0.0
+testaircount = 0.0
 #functions
 def simulate(a, b, c, d):
     pass
@@ -15,4 +16,8 @@ while True:
     fueltankareainput = input("What is the fuel tank area(in square units)? ")
     nossleareainput = input("What is the nossle area(in square units)? ")
     fueltankvolumeinput = input("What is the fuel tank volume(in cubic units)? ")
-    simulate(airpressureinput, fueltankareainput, nossleareainput, fueltankvolumeinput)
+    while true: #actuall loop
+        testaircount = fueltankvolume - testwatercount
+        
+        #stroke up steps:
+        testwatercount = testwatercount + 0.1
