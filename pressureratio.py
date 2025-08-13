@@ -9,6 +9,7 @@ testwatercount = 0.0
 testaircount = 0.0
 mass = 0.0
 water = 0.0
+atmosphericpressure = 101,325
 
 
 #functions
@@ -16,7 +17,7 @@ def simulate(p, Fa, Na, Fv):
     f = p/Na
 
 while True:
-    airpressureinput = input("What is the air pressure(in pascals)? ")
+    airpressureinput = input("What is the air pressure in the bottle(in pascals)? ")
     fueltankareainput = input("What is the fuel tank area(in square units)? ")
     nossleareainput = input("What is the nossle area(in square units)? ")
     fueltankvolumeinput = input("What is the fuel tank volume(in cubic units)? ")
