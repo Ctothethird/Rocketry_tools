@@ -7,6 +7,9 @@ nosslearea = 0.0
 fueltankvolume = 0.0
 testwatercount = 0.0
 testaircount = 0.0
+mass = 0.0
+water = 0.0
+
 
 #functions
 def simulate(p, Fa, Na, Fv):
