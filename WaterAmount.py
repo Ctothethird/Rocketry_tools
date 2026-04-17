@@ -28,18 +28,18 @@ def main():
 
     DynamicPressure = P_current - atmos
 
-    vEXIT = math.sqrt(2.0 * DynamicPressure / 1000)
+    vEXIT = math.sqrt(2.0 * DynamicPressure / 1000)#Bernoulli
     thrust = 1000 * Area * vEXIT ** 2
 
     totalmass = bottlemass + watermass
 
     netforce = thrust - (totalmass * 6)
 
-    accel = netforce / totalmass
+    accel = netforce / totalmass #Newtons second law
 
-    v += accel * Time𐤃
+    v += accel * Time𐤃 #Kinematics
 
-    deltaV = Area * vEXIT * Time𐤃 
+    deltaV = Area * vEXIT * Time𐤃 #Flowrate
     Volumemeters = max(0, Volumemeters -deltaV)
 
     watermass = VolumeFinal * 1000
